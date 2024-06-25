@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.project.okkyjobs.domain.OkkyRepositiory">
+	
+	<insert id="projectinput" parameterType="com.project.okkyjobs.domain.OkkyPractice">
+		
+		INSERT INTO
+
+incruit_mst
+		(intern_type, project_name,project_introduce,work_style,min_career,max_career,school_career,min_pay,
+		max_pay,working_period, start_day,money_month,money_day,incruit_end,having_skill,incruit_tag,incruit_detail,incruit_view,share_url,like_count,create_date,update_date)
+
+		VALUES
+		(
+		0,
+		"개발",
+		"개발",
+		"개발",
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		"2024-06-06",
+		"2024-06-06",
+		"2024-06-06",
+		"2024-06-06",
+		"개발",
+		"개발",
+		"개발",
+		0,
+		"개발",
+		0,
+		NOW(),
+		NOW());
+
+	</insert>
+  </mapper>
