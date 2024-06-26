@@ -1,0 +1,23 @@
+server:
+  port: 8000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-request: true
+      force-response: true
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  mvc:
+    static-path-pattern:  /static/**
+  datasource:
+    driver-class-name:  org.mariadb.jdbc.Driver                                           
+    url: jdbc:mariadb://web-study-0223.cb8c0c6206ug.ap-northeast-2.rds.amazonaws.com:3306/okkyjobs?useUnicode=true&characterEncoding=UTF-8
+    username: admin
+    password: 46tkfkdgo!Q
+    
+mybatis:
+  mapper-locations:
+  - /mappers/*.xml
