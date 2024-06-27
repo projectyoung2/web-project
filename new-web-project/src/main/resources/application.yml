@@ -17,7 +17,7 @@ spring:
     url: jdbc:mariadb://web-study-0223.cb8c0c6206ug.ap-northeast-2.rds.amazonaws.com:3306/okkyjobs?useUnicode=true&characterEncoding=UTF-8
     username: admin
     password: 46tkfkdgo!Q
-    
+   
 mybatis:
   mapper-locations:
   - /mappers/*.xml
